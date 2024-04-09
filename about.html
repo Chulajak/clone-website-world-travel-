@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style_about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu-bar">
+            <div class="logo">
+                <img src="imges/mountain.png" alt="mountain">
+                <h1>WORLD<br>TRAVEL</h1>
+            </div>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About us</li></a>
+                <a href="blog.html"><li>Blog</li></a>
+                <a href="contact.html"><li>Contact us</li></a>
+            </ul>
+            <img src="imges/menu.png" alt="" class="menu-icon">
+        </div>
+        <div class="menu-bar-scroll">
+            <div class="logo">
+                <img src="imges/mountain.png" alt="mountain">
+                <h1>WORLD<br>TRAVEL</h1>
+            </div>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About us</li></a>
+                <a href="blog.html"><li>Blog</li></a>
+                <a href="contact.html"><li>Contact us</li></a>
+            </ul>
+            <img src="imges/menu.png" alt="" class="menu-icon-2">
+        </div>
+        <div class="sidebar">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About us</li></a>
+                <a href="blog.html"><li>Blog</li></a>
+                <a href="contact.html"><li>Contact us</li></a>
+            </ul>
+        </div>
+        <div class="detail">    
+            <div class="text">
+                <h1>DISCOVER THE<br>WORLD IN A<br>NEW WAY</h1>
+                <p>The world is a book and those who do not travel read only one page. and people who have never traveled is like a man reading a single page.</p>
+                <p>Each journey we get new ideas from the culture of people living in each area, making our Outlook on life more open. Our walking experience may change our perspective.</p>
+            </div>
+            <div class="img">
+                <img src="imges/people.jpg" alt="people">
+            </div>
+        </div>
+    </div>
+   
+    <div class="footer">
+        <div class="box1">
+            <div class="logo">
+                <img src="imges/mountain.png" alt="">
+                <h1>WORLD<br>TRAVEL</h1>
+            </div>
+            <p>Great things never come from comfort zones wander often, wonder always. Travel brings power and love back into your life.</p>
+        </div>
+        <div class="box2">
+            <h2>TRAVEL AROUND THE WORLD</h2>
+            <p>123/4 Somewhere Bldg., Street Name, District Name, Province, 10400</p>
+            <p>Tel : 012 345 6789<br>E-mail : info@mydomain.com</p>
+        </div>
+        <div class="box3">
+            <h2>SUBSCRIBE</h2>
+            <input type="text" placeholder="Your Email address">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Phone number">
+            <span><a href="#">Subscribe</a></span>
+            <div class="icon">
+                <div class="img">
+                    <img src="imges/facebook.png" alt="facebook">
+                </div>
+                <div class="img">
+                    <img src="imges/twitter.png" alt="twitter">
+                </div>
+                <div class="img">
+                    <img src="imges/instagram.png" alt="instagram">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>Copyright | All Rights Reserved | Powered by Junrajak</p>
+        <p>Powered By Junrajak.T</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const menuIcon = document.querySelector('.menu-icon');
+        const sidebar = document.querySelector('.sidebar');
+        menuIcon.addEventListener('click', function() {
+            sidebar.classList.toggle('active');
+        });
+
+        document.addEventListener('click', function(event) {
+                if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
+                    sidebar.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
