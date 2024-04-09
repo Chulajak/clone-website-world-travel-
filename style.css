@@ -445,8 +445,8 @@ html {
         padding: 5px 20px;
         background-color: rgb(54, 82, 54);
         transition: 0.5s ease; 
-        opacity: 0;
-    }
+        opacity: 0; 
+    } 
     .menu-bar .logo {
         gap: 0;
     }
@@ -489,7 +489,7 @@ html {
         gap: 30px;
         margin-top: 30px;
         list-style: none;
-        padding: 0 20px;
+        padding: 0 20px;  
     }
     .sidebar ul a {
         text-decoration: none;
@@ -511,7 +511,6 @@ html {
         text-align: center;
     }
     .navbar .detail p {
-        /* font-size: 40px; */
         text-align: center;
         padding: 0 10px;
     }
@@ -556,7 +555,7 @@ html {
         font-size: 20px;
     }
     .section-Latest-Blogs {
-        margin-top: -50px;
+        margin-top: -50px;  
     }
     .section-Latest-Blogs .text h1 {
         font-size: 22px;
@@ -596,11 +595,12 @@ html {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 0 40px;
+        padding: 0 10px;
     }
-    .footer .box1 p {
-        padding: 0 30px;
+    .box1 {
+        width: 100%;
     }
+
 }
 
 @media (min-width: 650px) and (max-width: 1201px) {

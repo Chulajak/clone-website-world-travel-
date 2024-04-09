@@ -462,13 +462,16 @@ form .btn img {
     .footer .box1 p {
         padding: 0 30px;
     }
+    .box1 {
+        width: 100%;
+    }
 }
 
 @media (min-width: 650px) and (max-width: 1201px) {
     .navbar {
         width: 100%;
         height: max-content;
-    }
+    } 
     .navbar .menu-bar {
         position: sticky;
         top: 0;

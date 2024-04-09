@@ -274,17 +274,18 @@
         text-align: center;
     }
     .navbar .detail p {
-        /* font-size: 40px; */
         text-align: center;
         padding: 0 10px;
     }
     .navbar .detail {
         display: flex;
         flex-direction: column;
-        /* background-color: red; */
+    }
+    .navbar .detail .text {
+        width: 100%;
     }
     .navbar .detail .text p {
-        padding: 0 100px;
+        padding: 0 30px;
     }
     .navbar .detail .img {
         margin-top: -60px;
@@ -312,6 +313,9 @@
     }
     .footer .box1 p {
         padding: 0 30px;
+    }
+    .box1 {
+        width: 100%;
     }
 }
 
